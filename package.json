@@ -1,0 +1,34 @@
+{
+  "name": "nb-portal",
+  "version": "0.1.0",
+  "main": "src/portal.js",
+  "description": "Library to create portal",
+  "license": "",
+  "author": "",
+  "homepage": "",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:finnishare/portal.git"
+  },
+  "keywords": [
+    "JS",
+    "widgets",
+    "portal"
+  ],
+  "scripts": {
+    "start": "webpack-dev-server --progress --colors"
+  },
+  "dependencies": {
+    "webpack-dev-server": "^3.9.0"
+  },
+  "devDependencies": {
+    "@babel/core": "7.4.3",
+    "@babel/plugin-transform-runtime": "^7.7.6",
+    "@babel/preset-env": "^7.7.6",
+    "babel-loader": "8.0.5",
+    "html-webpack-plugin": "^3.2.0",
+    "node-libs-browser": "^0.5.2",
+    "webpack": "4.29.6",
+    "webpack-cli": "^3.3.10"
+  }
+}
