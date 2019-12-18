@@ -9,7 +9,7 @@ module.exports = {
         extensions: [".js"]
     },
     entry: {
-        app: ['./src/js/portal.js']
+        app: ['./src/js/index.js']
     },
     output: {
         path: path.resolve(__dirname, './dist'),
@@ -32,6 +32,7 @@ module.exports = {
         }
         ]
     },
+    devtool: 'source-map',
     devServer: {
         contentBase: false,
         historyApiFallback: true,

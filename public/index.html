@@ -9,5 +9,10 @@
 </head>
 <body>
 <div id="app"></div>
+
 </body>
+<script type="application/javascript">
+  let portalDemo = Portal.bootstrap('#app',{id:'1',name:'app portal',widget:[new Portal.widget.Input({id:'666'})]});
+  portalDemo.register(new Portal.widget.Input({id:'777'}));
+</script>
 </html>
