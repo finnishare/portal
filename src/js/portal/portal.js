@@ -9,15 +9,21 @@ class Portal {
         this.el = document.querySelector(el);
         this.options = options;
     }
-
     init() {
         console.log(this.options);
         this.options.widget.forEach(function(widget){
           this.register(widget);
         }.bind(this))
     }
-    register(widget){
-       this.el.appendChild(widget.render());
+    register(widgetInstance,layout){
+        widgetInstance.unmount();
+        widgetInstance.willMount();
+        //todo:layout framework
+       this.el.appendChild(widgetInstance.render());
+        widgetInstance.mounted();
+    }
+    unregister(widgetInstance){
+        this.el.removeChild(widgetInstance);
     }
 }
 

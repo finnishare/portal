@@ -12,7 +12,8 @@
 
 </body>
 <script type="application/javascript">
-  let portalDemo = Portal.bootstrap('#app',{id:'1',name:'app portal',widget:[new Portal.widget.Input({id:'666'})]});
-  portalDemo.register(new Portal.widget.Input({id:'777'}));
+  let portalDemo = Portal.bootstrap('#app',{id:'1',name:'app portal',widget:[new Portal.widget.Input({id:'123'})]});
+  portalDemo.register(new Portal.widget.Input());
+  portalDemo.register(new Portal.widget.Image('https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png'));
 </script>
 </html>
