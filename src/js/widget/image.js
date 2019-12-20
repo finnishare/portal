@@ -1,11 +1,9 @@
 import Component from '../component/component'
 
 class Image extends Component {
-    constructor(src,options) {
+    constructor(src, options) {
         super(options);
         this.src = src;
-        console.log(this.options);
-        console.log(this.rootDom)
     }
 
     render(container) {

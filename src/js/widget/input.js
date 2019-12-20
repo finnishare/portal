@@ -1,15 +1,14 @@
 import Component from '../component/component'
 
 class Input extends Component {
-    constructor(options) {
+    constructor(data, options) {
         super(options);
-        console.log(this.options);
-        console.log(this.rootDom)
+        this.data = data||{};
     }
 
     render(container) {
         let div = document.createElement('div');
-        div.innerHTML = '<h1>Hello,Input</h1><input value="1"/>';
+        div.innerHTML = `<h1>${this.data.title}</h1><input value="${this.data.value}"/> <button>Submit</button>`;
         return div;
     }
 }

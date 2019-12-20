@@ -12,17 +12,20 @@ class Component {
         this.rootDom.id=`widget_${this.options.id}`;
     }
 
-    unmount(container) {
+    unmount() {
+        console.log('widget unmount');
     }
 
     willMount(container) {
+        console.log('widget willMount')
     }
 
     mounted(container) {
+        console.log('widget mounted');
     }
 
     render(container) {
-
+     return this.rootDom;
     }
 }
 
